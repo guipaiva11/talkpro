@@ -1,18 +1,18 @@
 import { Link } from "react-router";
-import logo from "../assets/logo.png"; // substitua pelo caminho correto da imagem
+import logo from "../assets/logo.png"; 
 
 export function Header() {
   return (
     <header className="bg-white mt-6">
       <nav className="flex items-center justify-center px-8 py-4">
-        {/* Conteúdo centralizado */}
+        
         <div className="flex items-center space-x-8 gap-8">
-          {/* Logo */}
+          
           <Link to="/">
             <img src={logo} alt="Logo" className="h-5 w-auto" />
           </Link>
 
-          {/* Links de navegação */}
+          
           <ul className="flex space-x-6 text-sm text-gray-800 font-medium gap-8">
             <li>
               <Link to="/loja" className="hover:text-black">Loja</Link>

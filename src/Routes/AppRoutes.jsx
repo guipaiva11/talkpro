@@ -7,6 +7,8 @@ import { Produtos } from "../pages/Produtos"
 import { Suporte } from "../pages/Suporte"
 import { ErrorPage } from "../pages/ErrorPage"
 import { Layout } from "../components/Layout"
+import { Manual } from "../pages/Manual"
+import { SomosNos } from "../pages/SomosNos"
 
 export function AppRoutes() {
     return(
@@ -18,6 +20,8 @@ export function AppRoutes() {
                 <Route path="/produtos" element={<Produtos />} />
                 <Route path="/entreterimento" element={<Entreterimento />} />
                 <Route path="/suporte" element={<Suporte />} />
+                <Route path="/manual" element={<Manual />} />
+                <Route path="/somosnos" element={<SomosNos />} />
             </Route>
                 <Route path="*" element={<ErrorPage />} />
         </Routes>

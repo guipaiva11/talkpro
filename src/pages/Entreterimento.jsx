@@ -1,11 +1,22 @@
-import { Header } from "../components/Header"
+import silentReignImg from "../assets/silent-reign.png";
 
 export function Entreterimento() {
-    return(
-        <>
-            <main>
-                <h1>Entreterimento</h1>
-            </main>
-        </>
-    )
+  return (
+    <section className="w-full text-center">
+      <div className="w-full max-w-4xl mx-auto  mt-10 px-4">
+        <img src={silentReignImg} alt="Silent Reign" className="w-full" />
+      </div>
+      <div className="mt-10 px-4">
+        <h2 className="text-2xl  text-[30px] font-bold leading-snug">
+          Ritmo. Risco. <br />
+          Resistência. A fala é <br />
+          a nova arma.
+        </h2>
+        <p className="text-sm text-gray-700 mt-4 max-w-md mx-auto">
+          Um reino dominado pelo silêncio. Uma tecnologia esquecida. A <br className="hidden sm:inline" />
+          última chance de restaurar a voz da humanidade.
+        </p>
+      </div>
+    </section>
+  );
 }
