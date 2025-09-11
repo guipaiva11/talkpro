@@ -8,24 +8,24 @@ import talkpro from "../assets/talkpro.png";
 
 export function Produtos() {
     return (
-        <section className="w-full text-center">
+        <section className="w-full text-center dark:bg-black dark:text-white">
             <div className="py-10 px-4">
                 <h2 className="text-2xl md:text-3xl font-bold mb-2">Essenciais e estratégicos.</h2>
-                <p className="text-sm text-gray-600 max-w-md mx-auto">
+                <p className="text-sm text-gray-600 max-w-md mx-auto dark:text-white">
                     Encontre os materiais, componentes e ferramentas que deram vida ao nosso projeto — e podem dar vida ao seu também.
                 </p>
             </div>
 
-            <div className="bg-gray-200 py-8 px-4">
+            <div className="bg-gray-200 py-8 px-4 dark:bg-black">
                 <h3 className="text-lg font-semibold mb-6">Essenciais que movem ideias.</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto ">
                     <ProductCard image={parafuso} name="Parafusos" price="R$ 40" />
                     <ProductCard image={fita} name="Fita dupla face" price="R$ 30" />
                     <ProductCard image={chave} name="Chaves de montagem" price="R$ 50" />
                 </div>
             </div>
 
-            <div className="bg-gray-200 py-8 px-4">
+            <div className="bg-gray-200 py-8 px-4 dark:bg-black">
                 <h3 className="text-lg font-semibold mb-6">Interação e Controle</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     <ProductCard image={botoes} name="Botões táteis" price="R$ 60" />
@@ -46,10 +46,10 @@ export function Produtos() {
 
 function ProductCard({ image, name, price }) {
     return (
-        <div className="bg-blue-50 rounded-xl shadow-sm p-6 flex flex-col items-center">
+        <div className="bg-blue-50 rounded-xl shadow-sm p-6 flex flex-col items-center dark:bg-[linear-gradient(to_bottom,rgba(138,139,153,1),rgba(138,139,153,1),rgba(46,46,51,1))] ">
             <img src={image} alt={name} className="w-24 h-24 object-contain mb-4" />
-            <p className="text-sm font-medium">{name}</p>
-            <p className="text-sm font-medium">{price}</p>
+            <p className="text-sm font-medium dark:text-black">{name}</p>
+            <p className="text-sm font-medium dark:text-black">{price}</p>
         </div>
     );
 }

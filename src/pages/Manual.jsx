@@ -1,6 +1,7 @@
 export function Manual() {
     return (
-        <section className="max-w-2xl mx-auto bg-purple-100 text-gray-900 rounded-xl p-6 mt-10 shadow-sm">
+        <div className="dark:bg-black dark:text-white pt-15 pb-15">
+            <section className="max-w-2xl mx-auto bg-purple-100 text-gray-900 rounded-xl p-6 pt-10 shadow-sm dark:bg-[rgba(230,232,255,0.6)] dark:text-white">
             <h2 className="text-lg text-[30px] pt-5 pb-5 font-bold mb-4">Como usar sua Talk Pro?</h2>
 
             <div className="text-sm space-y-6">
@@ -62,5 +63,6 @@ export function Manual() {
                 </div>
             </div>
         </section>
+        </div>
     );
 }
