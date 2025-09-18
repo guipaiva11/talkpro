@@ -22,10 +22,10 @@ export function Home() {
       setIsDark(isDarkMode);
     };
 
-    // Verifica inicialmente
+    
     checkDarkMode();
 
-    // Observa mutações na <html> para detectar adição/remocao da classe 'dark'
+    
     const observer = new MutationObserver(checkDarkMode);
     observer.observe(document.documentElement, {
       attributes: true,
